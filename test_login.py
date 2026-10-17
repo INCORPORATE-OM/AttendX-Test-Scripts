@@ -14,3 +14,8 @@ def test_login_with_empty_credentials():
     password = ""
     assert username == ""
     assert password == ""
+
+
+def test_login_password_minimum_length():
+    password = "AttendX@123"
+    assert len(password) >= 8
